@@ -1,0 +1,125 @@
+.main-header {
+    background: center center no-repeat url('../img/header-image.jpg');
+    background-size: cover;
+    padding: 29px 0 79px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 21px;
+}
+
+.input-container-desktop {
+    display: flex;
+    background-color: #FFF;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-bottom: 27px;
+    > input {
+        outline: none;
+        border: 0;
+        font-size: 18px;
+        width: 300px;
+        max-width: 100%;
+        margin: 0 48px 0 12px;
+        &::placeholder {
+            font-weight: lighter;
+            color: $secondaryColor;
+        }
+    }
+}
+.header-button {
+    font-size: 16px;
+    background-color: $mainColor;
+    padding: 15px 15px 16px;
+    border: 0;
+    border-radius: 3px;
+    color: #FFF;
+    margin: 15px 0;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.input-container-mobile {
+    display: flex;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    .input-mobile {
+        background-color: #FFF;
+        padding: 15px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+    }
+    input {
+        outline: none;
+        border: 0;
+        font-size: 15px;
+        width: 255px;
+        max-width: 100%;
+        margin: 0 12px;
+        &::placeholder {
+            font-weight: lighter;
+            color: $secondaryColor;
+        }
+    }
+    > .header-button {
+        width: 100%;
+        margin: 13px 0 11px;
+    }
+}
+
+.header-sub-text {
+    line-height: 21px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.header-sub-button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 11px 11px 23px;
+    border: 0;
+    border-radius: 100px;
+    color:$mainColor;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    > img {
+        width: 30px;
+        height: 30px;
+        margin-left: 32px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .main-header {
+        padding: 70px 0 79px;
+    }
+    .header-title {
+        font-size: 70px;
+        font-weight: lighter;
+        margin-bottom: 57px;
+    }
+    .header-sub-text {
+        line-height: 26px;
+        margin-bottom: 24px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

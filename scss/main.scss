@@ -1,0 +1,179 @@
+.advantages.container {
+    margin: -70px auto 0;
+    background-color: #FFF;
+    color: $secondaryColor;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 36px; 
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #0099d9;
+    padding-top: 28px;
+    margin-bottom: 11px;
+}
+
+.section-subtitle {
+    margin: 0 auto 29px;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.advantages-item {
+    text-align: left;
+    padding-bottom: 25px; 
+    img {
+        margin-bottom: 30px;
+    }
+    .advantages-item-sub-title {
+        color: $mainColor;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    p {
+        color: $ternaryColor;
+        font-size: 13px;
+    }
+}
+
+.sale-steps-example {
+    background: center center no-repeat url('../img/section-image.jpg');
+    background-size: cover;
+    margin-top: -70px;  
+    padding-top: 70px;
+    > .container {
+        text-align: center;
+    }
+    .section-subtitle {
+        padding-bottom: 18px;
+        margin-bottom: 0;
+    }
+}
+
+.sale-step {
+    text-align: left;
+    margin-bottom: 25px;
+    p {
+        font-size: 14px;
+        color: $ternaryColor;
+    }
+    .sale-subtitle {
+        font-size: 18px;
+        color: $secondaryColor;
+    }
+    &:last-child {
+        margin-bottom: 15px;
+    }
+}
+
+.sale-step-text {
+    margin-bottom: 26px;
+}
+.number-circled {
+    border-radius: 50%;
+    font-size: 30px;
+    color: #FFF;
+    background-color: $mainColor;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.conditions-section {
+    // background: center center no-repeat url('../img/section-image-2.jpg');
+    // background-size: cover;
+    background-color: #008bcf;
+    padding-bottom: 49px; 
+    color: #FFF;
+    text-align: center;
+    .section-title {
+        color: #FFF;
+    }
+}
+
+.check-our-rate {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px;
+    color: #FFF;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 100px;
+    transition: background-color 1s;
+    &:hover, :active {
+        color: $mainColor;
+        background-color: #FFF;
+    }
+}
+
+.we-work-with {
+    > .container {
+        text-align: center;
+        img:first-child {
+            margin-bottom: 30px;
+        }
+    }
+    .row {
+        margin-bottom: 85px;
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages-item img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .advantages.container {
+        padding-bottom: 0;
+    }
+    .advantages-item {
+        text-align: center;
+        margin-bottom: 99px;
+        padding-bottom: 0;
+        .advantages-item-sub-title {
+            font-size: 18px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .section-title {
+        font-size: 42px;
+        padding-top: 56px;
+        margin-bottom: 13px;
+    }
+    .section-subtitle {
+        width: 46%;
+        margin: 0 auto 60px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .we-work-with {
+        > .container {
+            img:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+    .sale-steps-example {
+        .section-subtitle {
+            padding-bottom: 0;
+            margin: 0 auto 29px;
+        }
+    }
+    .conditions-section {
+        padding-bottom: 66px;
+    }
+}

@@ -4,11 +4,14 @@
   "description": "Prueba tecnica de maquetacion para proun",
   "main": "index.js",
   "scripts": {
+    "scss": "node-sass --watch scss -o css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kiara Mendoza",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-4-grid": "^3.4.0"
+    "bootstrap-4-grid": "^3.4.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
   }
 }

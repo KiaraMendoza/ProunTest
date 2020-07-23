@@ -1,0 +1,354 @@
+.main-nav {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #FFF; }
+  .main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 51px;
+    max-width: 1600px; }
+
+.main-logo {
+  flex: auto;
+  margin-left: 17px; }
+  .main-logo > * {
+    display: inline; }
+  .main-logo img {
+    max-height: 34px; }
+  .main-logo .logo-text {
+    font-size: 27px;
+    font-weight: bold; }
+    .main-logo .logo-text b {
+      color: #008bcf; }
+
+.navbar {
+  min-width: 40%;
+  padding: 0; }
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navbar-item {
+  font-size: 14px;
+  color: #4a4a4a;
+  padding-bottom: 2px;
+  text-transform: uppercase; }
+  .navbar-item:hover {
+    color: #4a4a4a;
+    border-bottom: 4px solid #008bcf;
+    text-decoration: none; }
+
+.subnav-content {
+  display: none; }
+
+.nav-contact-info, .contact-info {
+  display: flex; }
+  .nav-contact-info .phone-contact, .contact-info .phone-contact {
+    color: #545454;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0; }
+    .nav-contact-info .phone-contact > img, .contact-info .phone-contact > img {
+      margin-right: 5px; }
+
+@media (min-width: 1120px) {
+  .main-nav .container {
+    min-height: 120px; }
+  .main-logo {
+    flex: unset; }
+  .main-logo img {
+    max-height: unset; } }
+
+.main-header {
+  background: center center no-repeat url("../img/header-image.jpg");
+  background-size: cover;
+  padding: 29px 0 79px; }
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-align: center; }
+
+.header-title {
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 21px; }
+
+.input-container-desktop {
+  display: flex;
+  background-color: #FFF;
+  padding: 0 15px;
+  border-radius: 3px;
+  margin-bottom: 27px; }
+  .input-container-desktop > input {
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 48px 0 12px; }
+    .input-container-desktop > input::placeholder {
+      font-weight: lighter;
+      color: #4a4a4a; }
+
+.header-button {
+  font-size: 16px;
+  background-color: #008bcf;
+  padding: 15px 15px 16px;
+  border: 0;
+  border-radius: 3px;
+  color: #FFF;
+  margin: 15px 0;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.input-container-mobile {
+  display: flex; }
+  .input-container-mobile img {
+    width: 20px;
+    height: 20px; }
+  .input-container-mobile .input-mobile {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center; }
+  .input-container-mobile input {
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    width: 255px;
+    max-width: 100%;
+    margin: 0 12px; }
+    .input-container-mobile input::placeholder {
+      font-weight: lighter;
+      color: #4a4a4a; }
+  .input-container-mobile > .header-button {
+    width: 100%;
+    margin: 13px 0 11px; }
+
+.header-sub-text {
+  line-height: 21px;
+  margin-bottom: 16px;
+  font-size: 14px; }
+
+.header-sub-button {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 11px 11px 23px;
+  border: 0;
+  border-radius: 100px;
+  color: #008bcf;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .header-sub-button > img {
+    width: 30px;
+    height: 30px;
+    margin-left: 32px; }
+
+@media (min-width: 1120px) {
+  .main-header {
+    padding: 70px 0 79px; }
+  .header-title {
+    font-size: 70px;
+    font-weight: lighter;
+    margin-bottom: 57px; }
+  .header-sub-text {
+    line-height: 26px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: bold; } }
+
+.advantages.container {
+  margin: -70px auto 0;
+  background-color: #FFF;
+  color: #4a4a4a;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 36px; }
+
+.section-title {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #0099d9;
+  padding-top: 28px;
+  margin-bottom: 11px; }
+
+.section-subtitle {
+  margin: 0 auto 29px;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 20px; }
+
+.advantages-item {
+  text-align: left;
+  padding-bottom: 25px; }
+  .advantages-item img {
+    margin-bottom: 30px; }
+  .advantages-item .advantages-item-sub-title {
+    color: #008bcf;
+    font-weight: bold;
+    font-size: 14px; }
+  .advantages-item p {
+    color: #9b9b9b;
+    font-size: 13px; }
+
+.sale-steps-example {
+  background: center center no-repeat url("../img/section-image.jpg");
+  background-size: cover;
+  margin-top: -70px;
+  padding-top: 70px; }
+  .sale-steps-example > .container {
+    text-align: center; }
+  .sale-steps-example .section-subtitle {
+    padding-bottom: 18px;
+    margin-bottom: 0; }
+
+.sale-step {
+  text-align: left;
+  margin-bottom: 25px; }
+  .sale-step p {
+    font-size: 14px;
+    color: #9b9b9b; }
+  .sale-step .sale-subtitle {
+    font-size: 18px;
+    color: #4a4a4a; }
+  .sale-step:last-child {
+    margin-bottom: 15px; }
+
+.sale-step-text {
+  margin-bottom: 26px; }
+
+.number-circled {
+  border-radius: 50%;
+  font-size: 30px;
+  color: #FFF;
+  background-color: #008bcf;
+  text-align: center;
+  width: 50px;
+  height: 50px; }
+
+.conditions-section {
+  background-color: #008bcf;
+  padding-bottom: 49px;
+  color: #FFF;
+  text-align: center; }
+  .conditions-section .section-title {
+    color: #FFF; }
+
+.check-our-rate {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px;
+  color: #FFF;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 100px;
+  transition: background-color 1s; }
+  .check-our-rate:hover, .check-our-rate :active {
+    color: #008bcf;
+    background-color: #FFF; }
+
+.we-work-with > .container {
+  text-align: center; }
+  .we-work-with > .container img:first-child {
+    margin-bottom: 30px; }
+
+.we-work-with .row {
+  margin-bottom: 85px; }
+
+@media (max-width: 768px) {
+  .advantages-item img {
+    width: 60px;
+    height: 60px; } }
+
+@media (min-width: 768px) {
+  .advantages.container {
+    padding-bottom: 0; }
+  .advantages-item {
+    text-align: center;
+    margin-bottom: 99px;
+    padding-bottom: 0; }
+    .advantages-item .advantages-item-sub-title {
+      font-size: 18px; }
+    .advantages-item p {
+      font-size: 16px; } }
+
+@media (min-width: 1120px) {
+  .section-title {
+    font-size: 42px;
+    padding-top: 56px;
+    margin-bottom: 13px; }
+  .section-subtitle {
+    width: 46%;
+    margin: 0 auto 60px;
+    font-size: 18px;
+    line-height: 26px; }
+  .we-work-with > .container img:first-child {
+    margin-right: 30px; }
+  .sale-steps-example .section-subtitle {
+    padding-bottom: 0;
+    margin: 0 auto 29px; }
+  .conditions-section {
+    padding-bottom: 66px; } }
+
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid #e5e5e5;
+  padding-top: 35px;
+  padding-bottom: 37px; }
+
+.sub-footer {
+  margin-bottom: 35px; }
+  .sub-footer > .container {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-top: 3px solid #e5e5e5;
+    border-bottom: 3px solid #e5e5e5;
+    margin: 0 auto;
+    align-items: center; }
+  .sub-footer p {
+    margin-bottom: 0; }
+  .sub-footer a, .sub-footer a:hover {
+    color: #4a4a4a;
+    text-decoration: none; }
+  .sub-footer nav {
+    text-align: center; }
+    .sub-footer nav a {
+      margin-right: 20px;
+      font-size: 13px; }
+  .sub-footer .social-media-icons {
+    text-align: right; }
+
+.copyright {
+  font-size: 13px;
+  color: #545454; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif; }
+
+p {
+  margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+button:focus {
+  outline: none; }
