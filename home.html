@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     
     <title>Clicasa</title>
 </head>
 <body>
+    <div id="overlay" class="overlay no-display"></div>
     <nav class="main-nav">
         <div class="container">
             <div id="mobile-hamburger" class="mobile-menu d-inline d-xl-none">
@@ -21,7 +23,7 @@
                     <img class="logo-img" src="./svg/logo-principal.svg" alt="logo">
                 </a>
             </div>
-            <div id="navbar" class="navbar d-none d-xl-inline">
+            <div id="navbar" class="navbar no-display" style="display: none;">
                 <div class="navbar-list">
                     <a href="#" class="navbar-item">Vender</a>
                     <a href="#" class="navbar-item">Comprar</a>
@@ -37,7 +39,7 @@
                 </div>
             </div>
             <div class="nav-contact-info">
-                <a href="#" class="phone-contact"><img src="./svg/corporativo-1.svg" alt=""> <p class="d-none d-md-inline">910 123 456</p></a>
+                <a href="#" class="phone-contact"><img src="./svg/corporativo-1.svg" alt=""> <p class="d-none d-lg-inline">910 123 456</p></a>
                 <a href="#" style="margin-right: -10px;"><img src="./svg/whatsapp.svg" alt=""></a>
                 <a href="#"><img src="./svg/mail.svg" alt=""></a>
             </div>
@@ -115,75 +117,87 @@
                 </div>
         </section>
         <section class="sale-steps-example">
-            <div class="container">
-                <h2 class="section-title">Vender tu piso nunca fue tan fácil</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="sales-steps-mobile d-lg-none">
+            <div class="sale-steps-header">
+                <div class="container">
+                    <h2 class="section-title">Vender tu piso nunca fue tan fácil</h2>
+                    <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="container px-0">
+                <div class="sales-steps">
                     <div class="row mx-0">
-                        <div class="col-12 col-md-6">
+                        <div id="sale-step-1" class="sale-step-container active col-12 col-md-6 col-xl-3">
                             <div class="sale-step">
                                 <div class="row">
-                                    <div class="col-2 pr-0 mx-auto">
+                                    <div class="col-2 col-xl-3 pr-0 mx-auto">
                                         <div class="number-circled">1</div>
                                     </div>
-                                    <div class="sale-step-content col-10">
+                                    <div class="sale-step-content col-10 col-xl-9">
                                         <p class="sale-subtitle">Descríbemos tu inmueble</p>
                                         <p class="sale-step-text">No te preocupes de su estado, ni de reparaciones para eneseñarlo</p>
                                     </div>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center d-xl-none">
                                     <img src="./img/group.jpg" alt="someone writing on laptop">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div id="sale-step-2" class="sale-step-container col-12 col-md-6 col-xl-3">
                             <div class="sale-step">
                                 <div class="row">
-                                    <div class="col-2 pr-0 mx-auto">
+                                    <div class="col-2 col-xl-3 pr-0 mx-auto">
                                         <div class="number-circled">2</div>
                                     </div>
-                                    <div class="sale-step-content col-10">
+                                    <div class="sale-step-content col-10 col-xl-9">
                                         <p class="sale-subtitle">Recibe una oferta en 24 horas</p>
                                         <p class="sale-step-text">Piénsatela</p>
                                     </div>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center d-xl-none">
                                     <img src="./img/group.jpg" alt="someone writing on laptop">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div id="sale-step-3" class="sale-step-container col-12 col-md-6 col-xl-3">
                             <div class="sale-step">
                                 <div class="row">
-                                    <div class="col-2 pr-0 mx-auto">
+                                    <div class="col-2 col-xl-3 pr-0 pr-lg-2 mx-auto">
                                         <div class="number-circled">3</div>
                                     </div>
-                                    <div class="sale-step-content col-10">
+                                    <div class="sale-step-content col-10 col-xl-9">
                                         <p class="sale-subtitle">Dinos hasta cuando quieres quedarte</p>
                                         <p class="sale-step-text">Nos ajustamos a tus necesidades, cuando tu estés listo nosotros también lo
                                             estaremos</p>
                                     </div>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center d-xl-none">
                                     <img src="./img/group.jpg" alt="someone writing on laptop">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div id="sale-step-4" class="sale-step-container col-12 col-md-6 col-xl-3">
                             <div class="sale-step">
                                 <div class="row">
-                                    <div class="col-2 pr-0 mx-auto">
+                                    <div class="col-2 col-xl-3 pr-0 mx-auto">
                                         <div class="number-circled">4</div>
                                     </div>
-                                    <div class="sale-step-content col-10">
+                                    <div class="sale-step-content col-10 col-xl-9">
                                         <p class="sale-subtitle">Ya está!</p>
                                         <p class="sale-step-text">Firma la venta y recibe el dinero</p>
                                     </div>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center d-xl-none">
                                     <img src="./img/group.jpg" alt="someone writing on laptop">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0">
+                        <div class="sale-steps-slider d-none d-xl-block">
+                            <img id="image-slider-0" class="slider-image" src="./img/group.jpg" alt="Someone writing on laptop">
+                            <img id="image-slider-1" class="slider-image" src="./img/group-5.png" alt="Someone writing on laptop">
+                            <img id="image-slider-2" class="slider-image" src="./img/group-4.png" alt="Someone writing on laptop">
+                            <img id="image-slider-3" class="slider-image" src="./img/group.jpg" alt="Someone writing on laptop">
                         </div>
                     </div>
                 </div>
@@ -196,13 +210,54 @@
                 <button class="check-our-rate" type="button">Descubre nuestras tarifas</button>
             </div>
         </section>
-        <section class="we-work-with">
+        <section class="we-work-with d-none d-lg-block">
             <div class="container">
                 <h2 class="section-title">Trabajamos con las mejores empresas</h2>
                 <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div>
                     <img src="./img/group-4.png" alt="">
                     <img src="./img/group-5.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section d-lg-none">
+            <div class="container">
+                <h2 class="section-title">Nuestra mejor referencia, nuestros clientes</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+                <div class="testimonial-slider">
+                    <div id="testimonial-0" class="testimonial active">
+                        <div class="testimonial-image">
+                            <img src="./img/testimonial.jpg" alt="A user">
+                        </div>
+                        <div class="testimonial-text">
+                            <h4 class="testimonial-title">Fue realmente fácil, en una semana vendí mi piso</h4>
+                            <p class="testimonial-username">Sonia M.</p>
+                        </div>
+                    </div>
+                    <div id="testimonial-1" class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="./img/testimonial.jpg" alt="A user">
+                        </div>
+                        <div class="testimonial-text">
+                            <h4 class="testimonial-title">Fue realmente fácil, en una semana vendí mi piso</h4>
+                            <p class="testimonial-username">Sandra M.</p>
+                        </div>
+                    </div>
+                    <div id="testimonial-2" class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="./img/testimonial.jpg" alt="A user">
+                        </div>
+                        <div class="testimonial-text">
+                            <h4 class="testimonial-title">Fue realmente fácil, en una semana compré mi piso</h4>
+                            <p class="testimonial-username">Oriol S.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slider-buttons">
+                    <div id="testimonial-step-0" class="testimonial-step active"></div>
+                    <div id="testimonial-step-1" class="testimonial-step"></div>
+                    <div id="testimonial-step-2" class="testimonial-step"></div>
                 </div>
             </div>
         </section>
@@ -216,27 +271,64 @@
         </section>
     </main>
     <footer>
-        <div class="container row mx-auto">
-            <div class="main-logo">
-                <a href="#">
-                    <img class="logo-img" src="./svg/logo-principal.svg" alt="logo">
-                </a>
+        <div class="footer-desktop d-none d-xl-block">
+            <div class="container row mx-auto">
+                <div class="main-logo">
+                    <a href="#">
+                        <img class="logo-img" src="./svg/logo-principal.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <a href="#" class="phone-contact"><img src="./svg/corporativo-1.svg" alt=""> 910 123 456</a>
+                    <a href="#" class="phone-contact"><img src="./svg/mail.svg" alt=""> info@clicasa.com</a>
+                </div>
             </div>
-            <div class="contact-info">
-                <a href="#" class="phone-contact"><img src="./svg/corporativo-1.svg" alt=""> 910 123 456</a>
-                <a href="#" class="phone-contact"><img src="./svg/mail.svg" alt=""> info@clicasa.com</a>
+            <div class="sub-footer">
+                <div class="container row">
+                    <div class="copyright col-12 col-lg-4">
+                        <p>© 2017 CLICASA. TODOS LOS DERECHOS RESERVADOS</p>
+                    </div>
+                    <nav class="col-12 col-lg-4">
+                        <a href="#">Mapa web</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Aviso legal</a>
+                    </nav>
+                    <div class="social-media-icons col-12 col-lg-4">
+                        <a href="#"><img src="./svg/facebook-circle-color.svg" alt=""></a>
+                        <a href="#"><img src="./svg/twitter-circle-color.svg" alt=""></a>
+                        <a href="#"><img src="./svg/linkedin-circle-color.svg" alt=""></a>
+                        <a href="#"><img src="./svg/youtube-circle-color.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="sub-footer">
-            <div class="container row">
-                <div class="copyright col-12 col-lg-4">
-                    <p>© 2017 CLICASA. TODOS LOS DERECHOS RESERVADOS</p>
+        <div class="footer-mobile d-xl-none">
+            <div class="row main-logo-row">
+                <div class="main-logo">
+                    <a href="#">
+                        <img class="logo-img" src="./svg/logo-principal.svg" alt="logo">
+                    </a>
                 </div>
+            </div>
+            <div class="row footer-nav-row">
                 <nav class="col-12 col-lg-4">
                     <a href="#">Mapa web</a>
                     <a href="#">Contacto</a>
                     <a href="#">Aviso legal</a>
                 </nav>
+            </div>
+            <div class="row contact-info-row">
+                <div class="contact-info">
+                    <a href="#" class="phone-contact"><img src="./svg/corporativo-1.svg" alt=""> 910 123 456</a>
+                    <a href="#" class="phone-contact"><img src="./svg/mail.svg" alt=""> info@clicasa.com</a>
+                </div>
+            </div>
+            <div class="row copyright-row">
+                <div class="copyright col-12 col-lg-4">
+                    <p>© 2017 CLICASA. TODOS LOS DERECHOS RESERVADOS</p>
+                </div>
+            </div>
+            <div class="row social-row">
                 <div class="social-media-icons col-12 col-lg-4">
                     <a href="#"><img src="./svg/facebook-circle-color.svg" alt=""></a>
                     <a href="#"><img src="./svg/twitter-circle-color.svg" alt=""></a>
@@ -247,17 +339,64 @@
         </div>
     </footer>
     <script>
+        // Script for mobile menu
+        const mobileHamburguer = document.getElementById('mobile-hamburger');
+        const mobileMenu = document.getElementById('navbar');
+        const overlay = document.getElementById('overlay');
 
-        let mobileHamburguer = document.getElementById('mobile-hamburger');
-        let mobileMenu = document.getElementById('navbar');
         mobileHamburguer.onclick = function OpenMobileMenu() {
-            console.log('Hola')
-            if (mobileMenu.classList.contains('d-none')) {
-                mobileMenu.classList.add('d-flex');
-                mobileMenu.classList.remove('d-none');
+            if (mobileMenu.classList.contains('no-display')) {
+                mobileMenu.style.display = 'flex';
+                setTimeout(()=> {
+                    mobileMenu.classList.add('mobile-nav');
+                    mobileMenu.classList.remove('no-display');
+                    overlay.classList.remove('no-display');
+                    overlay.classList.add('display-overlay');
+                }, 1);
             } else {
-                mobileMenu.classList.add('d-none');
-                mobileMenu.classList.remove('d-flex');
+                mobileMenu.classList.add('no-display');
+                mobileMenu.classList.remove('mobile-nav');
+                overlay.classList.add('no-display');
+                overlay.classList.remove('display-overlay');
+                mobileMenu.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        // Script for galery/slider on sale steps section
+        let saleSteps = document.getElementsByClassName('sale-step-container');
+        let sliderImages = document.getElementsByClassName('slider-image');
+
+        for (let x = 0; x < saleSteps.length; x++) {
+            saleSteps[x].onclick = () => {
+                // saleSteps.map(element => element.classList.remove('active'));
+                for (let i = 0; i < saleSteps.length; i++) {
+                    saleSteps[i].classList.remove('active')
+                }
+                for (let i = 0; i < sliderImages.length; i++) {
+                    sliderImages[i].classList.remove('selected-slider-image');
+                }
+                saleSteps[x].classList.add('active');
+                document.getElementById('image-slider-' + x).classList.add('selected-slider-image');
+            }
+        }
+    </script>
+    <script>
+        // Script for galery/slider on testimonials section
+        let testimonialStep = document.getElementsByClassName('testimonial-step');
+        let testimonial = document.getElementsByClassName('testimonial');
+        console.log(testimonialStep[1])
+
+        for (let x = 0; x < testimonialStep.length; x++) {
+            testimonialStep[x].onclick = () => {
+                for (let i = 0; i < testimonialStep.length; i++) {
+                    testimonialStep[i].classList.remove('active')
+                }
+                for (let i = 0; i < testimonialStep.length; i++) {
+                    testimonial[i].classList.remove('selected-slider-image');
+                }
+                testimonialStep[x].classList.add('active');
+                document.getElementById('testimonial-' + x).classList.add('selected-slider-image');
             }
         }
     </script>
