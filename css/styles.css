@@ -321,7 +321,7 @@
   padding: 16px;
   color: #FFF;
   background-color: transparent;
-  border: 2px solid;
+  border: 2px solid #FFF;
   border-radius: 100px;
   transition: background-color 1s;
   width: 85%; }
