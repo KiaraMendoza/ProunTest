@@ -484,7 +484,8 @@
   text-align: center; }
   .footer-mobile .row {
     margin-right: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    justify-content: center; }
   .footer-mobile .main-logo img {
     max-height: 46px; }
   .footer-mobile .main-logo-row {
