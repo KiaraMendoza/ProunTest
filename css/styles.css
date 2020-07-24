@@ -482,6 +482,9 @@
 
 .footer-mobile {
   text-align: center; }
+  .footer-mobile .row {
+    margin-right: 0;
+    margin-left: 0; }
   .footer-mobile .main-logo img {
     max-height: 46px; }
   .footer-mobile .main-logo-row {
