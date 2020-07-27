@@ -23,7 +23,7 @@
                     <img class="logo-img" src="./svg/logo-principal.svg" alt="logo">
                 </a>
             </div>
-            <div id="navbar" class="navbar no-display" style="display: none;">
+            <div id="navbar" class="navbar no-display" style="">
                 <div class="navbar-list">
                     <a href="#" class="navbar-item">Vender</a>
                     <a href="#" class="navbar-item">Comprar</a>
@@ -371,9 +371,7 @@
             saleSteps[x].onclick = () => {
                 // saleSteps.map(element => element.classList.remove('active'));
                 for (let i = 0; i < saleSteps.length; i++) {
-                    saleSteps[i].classList.remove('active')
-                }
-                for (let i = 0; i < sliderImages.length; i++) {
+                    saleSteps[i].classList.remove('active');
                     sliderImages[i].classList.remove('selected-slider-image');
                 }
                 saleSteps[x].classList.add('active');
@@ -390,9 +388,7 @@
         for (let x = 0; x < testimonialStep.length; x++) {
             testimonialStep[x].onclick = () => {
                 for (let i = 0; i < testimonialStep.length; i++) {
-                    testimonialStep[i].classList.remove('active')
-                }
-                for (let i = 0; i < testimonialStep.length; i++) {
+                    testimonialStep[i].classList.remove('active');
                     testimonial[i].classList.remove('selected-slider-image');
                 }
                 testimonialStep[x].classList.add('active');

@@ -98,7 +98,7 @@
   .navbar {
     min-width: 40%;
     padding: 0; }
-    .navbar.index-0 {
+    .navbar.no-display {
       z-index: 1;
       height: unset;
       visibility: unset; }
